@@ -12,3 +12,23 @@ class Cinema {
     + contato(razao_social, responsavel, telefone, email)
     + cadastro completo(razao_social, responsavel, cnpj, endereco, telefone, cep, email)
 }
+
+class Sala{
+    - num_sala: Interger
+    - capacidade: Interger
+    - assentos: Interger
+    - ocupacao: Boolean
+    + construtor(num_sala, capacidade, assentos, ocupacao)
+    + alocacao_vendas(assentos, ocupacao)
+    + capacidade_salas(num_sala, capacidade)
+}
+
+class Sessao{
+    - data_sessao
+    - hora_sessao
+    - encerrada: Boolean
+    - sala: Sala
+    + construtor(data_sessao, hora_sessao, encerrada, sala)
+    + sala_sessao(data_sessao, hora_sessao, sala)
+    + situacao_sessao(encerrada, data_sessao, hora_sessao, sala)    
+}

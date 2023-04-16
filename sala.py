@@ -11,6 +11,6 @@ class Sala{
             else
             f'Assento {self._assento} Disponivel.'
         
-        del capacidade_salas(self, num_sala, capacidade)
+        def capacidade_salas(self, num_sala, capacidade)
             return f'A {self._num_sala} tem capacidade de {self._capacidade}'       
 }

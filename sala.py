@@ -6,12 +6,17 @@ class Sala:
         self._assentos = assentos
         self._ocupacao = ocupacao
         
-        def alocacao_vendas(self, assentos, ocupacao):    
-            if self._ocupacao:
-             return f'Assento {self._assento} Vendido!'
+        def alocacao_vendas(self, assentos):                
+            if assentos == self._assentos:
+             if self._ocupacao == 1:
+              return f'Assento {self._assento} Vendido!'
+             else:
+              return f'Assento {self._assento} Disponivel.'
             else:
-             return f'Assento {self._assento} Disponivel.'
-        
-        def capacidade_salas(self, num_sala, capacidade):
-            return f'A {self._num_sala} tem capacidade de {self._capacidade}'       
-
+              return f'Assento inexistente.'
+            
+        def capacidade_salas(self, num_sala):
+            if num_sala == self._num_sala:
+             return f'A {self._num_sala} tem capacidade de {self._capacidade}'       
+            else:
+             return f'Sala inexistente.'   

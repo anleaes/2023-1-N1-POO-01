@@ -1,0 +1,14 @@
+@startuml Diagrama Herança Cinema - Grupo 1
+
+class Cinema {
+    - razao_social: String
+    - responsavel: String
+    - cnpj: Interger 
+    - endereco: String
+    - telefone: Interger
+    - cep: Interger
+    - email: String
+    + construtor(razao_social, resposavel, cnpj, endereco, telefone, cep, email)
+    + contato(razao_social, responsavel, telefone, email)
+    + cadastro completo(razao_social, responsavel, cnpj, endereco, telefone, cep, email)
+}

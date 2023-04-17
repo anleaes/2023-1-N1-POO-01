@@ -9,9 +9,12 @@ class Cliente:
        self._data_nascimento = data_nascimento
        self._telefone = telefone
        self._email = email
-    
+           
     def contato_cliente(self, nome, telefone, email):
         set(self._nome, self._telefone, self._email)
         
     def consumo_cliente(self, nome, email, ingresso, compras):
         return self._nome, self._email, self._ingresso, self._compras
+    
+    #--------
+    

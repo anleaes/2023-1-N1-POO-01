@@ -43,6 +43,19 @@ class Ingresso {
     + preco_ingresso(tipo, preco_ingresso, sessao)
 }
 
+class Cliente{
+    - nome: String
+    - cpf: Interger
+    - data_nascimento: Interger
+    - telefone: Interger
+    - email: String
+    - ingresso: Ingresso
+    - compras: Loja
+    + construtor(nome, cpf, data_nascimento, telefone, email, ingresso, compras)
+    + contato_cliente(nome, telefone, email)
+    + consumo_cliente(nome, email, ingresso, compras)    
+}
+
 Cinema <|-- Sala
 Sala --|> Sessao
 Filme --|> Sessao

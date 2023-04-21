@@ -68,10 +68,10 @@ class Filme{
     - titulo: String
     - genero: String
     - duracao: Time
-    - class_etaria: Interger
-    + construtor(titulo, genero, duracao, class_etaria, em_cartaz)
+    - classificacao: Interger
+    + construtor(titulo, genero, duracao, classificacao, em_cartaz)
     + listar_filmes(titulo, em_cartaz)
-    + classif_etaria(titulo, class_etaria)
+    + classificacao(titulo, classificacao)
 }
 
 class Estreia{

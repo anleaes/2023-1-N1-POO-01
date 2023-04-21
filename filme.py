@@ -1,9 +1,9 @@
 class Filme:
-        def __init__(self, nome: str, duracao: str, genero: str, classificacao: str):
-        self.nome = nome
+        def __init__(self, titulo: str, duracao: str, genero: str, classificacao: str):
+        self.titulo = nome
         self.duracao = duracao
         self.genero = genero
         self.classificacao = classificacao
         
     def get_filme(self):
-        return self.nome + " - " + self.genero + " - " + self.duracao + " - " + self.classificacao
+        return self.titulo + " - " + self.genero + " - " + self.duracao + " - " + self.classificacao

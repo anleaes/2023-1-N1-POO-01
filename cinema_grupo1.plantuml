@@ -13,8 +13,6 @@ class Cinema {
     + cadastro completo(id, responsavel, cnpj, endereco, telefone, cep, email)
 }
 
-
-
 class Sala{
     - num_sala: Interger
     - capacidade: Interger

@@ -12,3 +12,4 @@ class Cliente:
         
     def consumo_cliente(self, nome, email, ingresso, compras):
         return self._nome, self._email, self._ingresso, self._compras
+    

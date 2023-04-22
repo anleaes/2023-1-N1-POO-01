@@ -73,14 +73,12 @@ class Filme{
     + classificacao(titulo, classificacao)
 }
 
-class Estreia{
+class Estreia {
     - titulo: Filme
-    - class_etaria: Interger
     - em_cartaz: Boolean
     - data_estreia: date
-    + construtor(titulo, class_etaria, em_cartaz)
-    + listar_filmes(titulo, em_cartaz, data_estreia)
-    
+    + construtor(titulo, em_cartaz, data_estreia)
+    + listar_filmes(titulo data_estreia)
 }
 
 Cinema <|-- Sala

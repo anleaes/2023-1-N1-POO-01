@@ -8,3 +8,4 @@ class Ingresso:
 
     def escolher_ingresso (self):
         return self._tipo_tipo
+    

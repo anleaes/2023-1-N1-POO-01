@@ -31,12 +31,12 @@ class Sessao{
 }
 
 class Loja{
-    - produtos: String
+    - itens: String
     - preco: Float
     - nota_fiscal: Interger
-    + construtor(nota_fiscal, produtos, preco)
-    + compra(nota_fiscal, produtos, preco)
-    + tabela_precos(produtos, preco)
+    + construtor(nota_fiscal, itens, preco)
+    + compra(nota_fiscal, itens, preco)
+    + tabela_precos(itens, preco)
 }
 
 class Ingresso{

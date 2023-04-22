@@ -19,10 +19,6 @@ class Filme:
         else:
             return "Filme não encontrado."
 
-//Nessa implementação, temos a classe Filme com os atributos privados titulo, genero, duracao,
-classificacao e em_cartaz, e um construtor que recebe esses atributos como argumentos. 
-O método listar_filmes recebe como parâmetros um título e um booleano que indica se o filme está
-em cartaz ou não, e retorna o título do filme se ele estiver em cartaz ou uma mensagem informando que 
-o filme não está em cartaz. O método classificacao recebe como parâmetros um título e uma classificação
-indicativa e atualiza a classificação do filme correspondente se ele for encontrado, ou retorna uma
-mensagem informando que o filme não foi encontrado.
+//Nessa implementação, temos a classe Filme com os atributos privados titulo, genero, duracao,classificacao e em_cartaz, e um construtor que recebe esses atributos como argumentos. O método listar_filmes recebe como parâmetros um título e um booleano que indica se o filme está em cartaz ou não, e retorna o título do filme se ele estiver em cartaz ou uma mensagem informando que 
+o filme não está em cartaz. O método classificacao recebe como parâmetros um título e uma classificação indicativa e atualiza a classificação do filme correspondente se ele for encontrado, ou retorna uma
+mensagem informando que o filme não foi encontrado. 

@@ -16,20 +16,18 @@ class Sala{
     - num_sala: Interger
     - capacidade: Interger
     - assentos: Interger
-    - ocupacao: Boolean
-    + construtor(num_sala, capacidade, assentos, ocupacao)
-    + alocacao_vendas(assentos, ocupacao)
-    + capacidade_salas(num_sala, capacidade)
+    + construtor(num_sala, capacidade, assentos)
+    + reservar_assentos(assentos)
+    + buscar_asento_livre(assentos)
 }
 
 class Sessao{
     - data_sessao
     - hora_sessao
-    - encerrada: Boolean
     - sala: Sala
-    + construtor(data_sessao, hora_sessao, encerrada, sala)
+    + construtor(data_sessao, hora_sessao, sala)
     + sala_sessao(data_sessao, hora_sessao, sala)
-    + situacao_sessao(encerrada, data_sessao, hora_sessao, sala)    
+    + situacao_sessao(data_sessao, hora_sessao, sala)      
 }
 
 class Loja{
@@ -87,6 +85,7 @@ class Estreia{
 Cinema <|-- Sala
 Sala --|> Sessao
 Filme --|> Sessao
+Filme <|-- Estreia
 Ingresso <|-- Cliente
 Cinema <|-- Loja
 Loja <|-- Cliente

@@ -74,11 +74,12 @@ class Filme{
 }
 
 class Estreia {
+    - id: Cinema
     - titulo: Filme
     - em_cartaz: Boolean
     - data_estreia: date
-    + construtor(titulo, em_cartaz, data_estreia)
-    + listar_estreia(titulo, data_estreia)
+    + construtor(id, titulo, em_cartaz, data_estreia)
+    + listar_estreia(Cinema, titulo, data_estreia)
 }
 
 Cinema <|-- Sala

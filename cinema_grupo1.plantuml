@@ -1,15 +1,18 @@
 @startuml Diagrama Herança Cinema - Grupo 1
-class Cinema{
-    - razao_social: String
+
+class Cinema {
+    - id: Interger
+    - responsavel: String
     - cnpj: Interger 
     - endereco: String
     - telefone: Interger
     - cep: Interger
     - email: String
-    + construtor(razao_social, cnpj, endereco, telefone, cep, email)
-    + contato(razao_social, telefone, email)
-    + completa(razao_social, cnpj, endereco, telefone, cep, email)
+    + construtor(id, resposavel, cnpj, endereco, telefone, cep, email)
+    + contato(id, responsavel, telefone, email)
+    + cadastro completo(id, responsavel, cnpj, endereco, telefone, cep, email)
 }
+
 
 
 class Sala{
@@ -73,13 +76,13 @@ class Filme{
 }
 
 class Estreia{
-    - titulo: String
-    - duracao: Time
+    - titulo: Filme
     - class_etaria: Interger
     - em_cartaz: Boolean
-    + construtor(titulo, genero, duracao, class_etaria, em_cartaz)
-    + listar_filmes(titulo, em_cartaz)
-    + classif_etaria(titulo, class_etaria)
+    - data_estreia: date
+    + construtor(titulo, class_etaria, em_cartaz)
+    + listar_filmes(titulo, em_cartaz, data_estreia)
+    
 }
 
 Cinema <|-- Sala

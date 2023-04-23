@@ -12,7 +12,7 @@ class Filme:
         else:
             return "Filme não está em cartaz."
 
-    def classificacao(self, titulo, classificacao):
+    def alterar_classificacao(self, titulo, classificacao):
         if self.titulo == titulo:
             self.classificacao = classificacao
             return "Classificação atualizada com sucesso."

@@ -16,8 +16,8 @@ class Loja:
         tabela[itens[i]] = preco[i]
     return tabela
 
-//Nessa implementação, temos a classe Loja com os atributos privados itens, preco e nota_fiscal,
-e um construtor que recebe esses atributos como argumentos. O método compra permite que o cliente 
-realize uma compra, atualizando os valores dos atributos da instância e retornando uma mensagem 
-informando a nota fiscal da compra. O método tabela_precos recebe uma lista de itens e uma lista de
-preços, e retorna um dicionário que mapeia cada item ao seu respectivo preço.
+#Nessa implementação, temos a classe Loja com os atributos privados itens, preco e nota_fiscal,
+#e um construtor que recebe esses atributos como argumentos. O método compra permite que o cliente 
+#realize uma compra, atualizando os valores dos atributos da instância e retornando uma mensagem 
+#informando a nota fiscal da compra. O método tabela_precos recebe uma lista de itens e uma lista de
+#preços, e retorna um dicionário que mapeia cada item ao seu respectivo preço.

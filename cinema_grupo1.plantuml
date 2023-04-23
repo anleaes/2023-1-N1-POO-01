@@ -57,7 +57,6 @@ class Cliente{
     - telefone: Interger
     - email: String
     - ingresso: Ingresso
-    - compras: Loja
     + construtor(nome, cpf, data_nascimento, telefone, email, ingresso, compras)
     + contato_cliente(nome, telefone, email)
     + consumo_cliente(nome, email, ingresso, compras)    
@@ -82,12 +81,12 @@ class Estreia {
     + listar_estreia(Cinema, titulo, data_estreia)
 }
 
-Cinema <|-- Sala
-Sala --|> Sessao
-Filme --|> Sessao
-Filme <|-- Estreia
-Ingresso <|-- Cliente
-Cinema <|-- Loja
-Loja <|-- Cliente
-Sessao --|> Ingresso
+Cinema *-- Sala
+Sala --* Sessao
+Filme --* Sessao
+Filme *-- Estreia
+Ingresso --* Cliente
+Cinema *-- Loja
+Loja --* Cliente
+Sessao *-- Ingresso
 @enduml

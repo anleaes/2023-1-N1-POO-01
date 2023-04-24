@@ -10,7 +10,7 @@ class Cinema {
     - email: String
     + construtor(id, nome, cnpj, endereco, telefone, cep, email)
     + contato(id, nome, telefone, email)
-    + cadastro completo(id, nome, cnpj, endereco, telefone, cep, email)
+    + cadastro_completo(id, nome, cnpj, endereco, telefone, cep, email)
 }
 
 class Sala{

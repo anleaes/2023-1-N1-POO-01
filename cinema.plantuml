@@ -82,7 +82,6 @@ class Estreia {
     + listar_estreia(cinema, titulo, data_estreia)
 }
 
-
 Cinema *-- Sala
 Sala --* Sessao
 Filme --* Sessao
@@ -91,4 +90,5 @@ Ingresso --* Cliente
 Cinema *-- Loja
 Loja --* Cliente
 Sessao *-- Ingresso
+
 @enduml

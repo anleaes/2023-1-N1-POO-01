@@ -90,4 +90,5 @@ Ingresso --* Cliente
 Cinema *-- Loja
 Loja --* Cliente
 Sessao *-- Ingresso
+
 @enduml

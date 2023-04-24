@@ -1,5 +1,3 @@
-from estreia import Cinema
-
 class Estreia:
     def _init_(self, id, titulo, em_cartaz, data_estreia):
         self.id = Cinema

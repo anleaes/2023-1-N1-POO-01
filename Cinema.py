@@ -11,6 +11,5 @@ class Cinema:
         self._email = email
     
     def selecionar_cinema(self):
-        return self._nome._endereco
-        print ("Você selecionou o Cinema")
+        return f"{self._id} Nome: {self._nome} Localização: {self._endereco}"
     

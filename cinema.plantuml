@@ -9,8 +9,7 @@ class Cinema {
     - cep: Interger
     - email: String
     + construtor(id, nome, cnpj, endereco, telefone, cep, email)
-    + contato(id, nome, telefone, email)
-    + cadastro_completo(id, nome, cnpj, endereco, telefone, cep, email)
+    + selecionar_cinema (id, nome, endereco)
 }
 
 class Sala{

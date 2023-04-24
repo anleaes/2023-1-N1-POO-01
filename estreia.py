@@ -1,8 +1,8 @@
 from cinema import Cinema
 
 class Estreia:
-    def _init_(self, cinema, titulo, em_cartaz, data_estreia):
-        self._cinema = cinema
+    def __init__(self, cinema, titulo, em_cartaz, data_estreia):
+        self.cinema = cinema
         self.titulo = titulo
         self.em_cartaz = em_cartaz
         self.data_estreia = data_estreia

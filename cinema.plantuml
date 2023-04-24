@@ -1,0 +1,93 @@
+@startuml Diagrama Herança Cinema - Grupo 1
+
+class Cinema {
+    - id: Interger
+    - nome: String
+    - cnpj: Interger 
+    - endereco: String
+    - telefone: Interger
+    - cep: Interger
+    - email: String
+    + construtor(id, nome, cnpj, endereco, telefone, cep, email)
+    + contato(id, nome, telefone, email)
+    + cadastro completo(id, nome, cnpj, endereco, telefone, cep, email)
+}
+
+class Sala{
+    - num_sala: Interger
+    - capacidade: Interger
+    - assentos: Interger
+    + construtor(num_sala, capacidade, assentos)
+    + reservar_assentos(assentos)
+    + buscar_asento_livre(assentos)
+}
+
+class Sessao{
+    - data_sessao
+    - hora_sessao
+    - sala: Sala
+    + construtor(data_sessao, hora_sessao, sala)
+    + sala_sessao(data_sessao)
+    + situacao_sessao(data_sessao)      
+}
+
+class Loja{
+    - itens: String
+    - preco: Float
+    - nota_fiscal: Interger
+    + construtor(nota_fiscal, itens, preco)
+    + compra(nota_fiscal, itens, preco)
+    + tabela_precos(itens, preco)
+}
+
+class Ingresso{
+    - tipo: Interger
+    - numero: Interger
+    - preco_ingresso: Float
+    - sessao: Sessao
+    + construtor(tipo, numero, preco_ingresso, sessao)
+    + tipo_ingresso(tipo)
+    + preco_ingresso(tipo, preco_ingresso, sessao)
+}
+
+class Cliente{
+    - nome: String
+    - cpf: Interger
+    - data_nascimento: Interger
+    - telefone: Interger
+    - email: String
+    - ingresso: Ingresso
+    - loja: Loja
+    + construtor(nome, cpf, data_nascimento, telefone, email, ingresso, compras)
+    + contato_cliente(nome, telefone, email)
+    + consumo_cliente(nome, email, ingresso, compras)    
+}
+
+class Filme{
+    - titulo: String
+    - genero: String
+    - duracao: Time
+    - classificacao: Interger
+    + construtor(titulo, genero, duracao, classificacao, em_cartaz)
+    + listar_filmes(titulo, em_cartaz)
+    + classificacao(titulo, classificacao)
+}
+
+class Estreia {
+    - titulo: Filme
+    - em_cartaz: Boolean
+    - data_estreia: date
+    - cinema: Cinema
+    + construtor(id, titulo, em_cartaz, data_estreia)
+    + listar_estreia(cinema, titulo, data_estreia)
+}
+
+Cinema *-- Sala
+Sala --* Sessao
+Filme --* Sessao
+Filme *-- Estreia
+Ingresso --* Cliente
+Cinema *-- Loja
+Loja --* Cliente
+Sessao *-- Ingresso
+@enduml

@@ -1,3 +1,5 @@
+from sessao import Sessao
+
 class Ingresso:
 
     def __init__(self, tipo, id, preco_ingresso, sessao):
@@ -7,4 +9,4 @@ class Ingresso:
         self._sessao = sessao
 
     def escolher_ingresso (self):
-        return self._tipo_tipo
+        return self._tipo

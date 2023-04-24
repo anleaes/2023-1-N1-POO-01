@@ -2,15 +2,15 @@
 
 class Cinema {
     - id: Interger
-    - responsavel: String
+    - nome: String
     - cnpj: Interger 
     - endereco: String
     - telefone: Interger
     - cep: Interger
     - email: String
-    + construtor(id, resposavel, cnpj, endereco, telefone, cep, email)
-    + contato(id, responsavel, telefone, email)
-    + cadastro completo(id, responsavel, cnpj, endereco, telefone, cep, email)
+    + construtor(id, nome, cnpj, endereco, telefone, cep, email)
+    + contato(id, nome, telefone, email)
+    + cadastro completo(id, nome, cnpj, endereco, telefone, cep, email)
 }
 
 class Sala{
